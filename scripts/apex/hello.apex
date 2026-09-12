@@ -48,3 +48,13 @@ for (Integer i = 0; i <= maxSize; i++){
     loopIntLis.add(i);
 }
 System.debug('forloop' + loopIntLis);
+// write a list to store all odd numbers in a list of integers from 1 to 20 , only numbers stored at even positions in the list should be added to get their sum and we need to prnt the sum as output
+List<Integer> oddNumbers = new List<Integer>();
+for(Integer i=1; i<=20; i+=2){
+    oddNumbers.add(i);
+}
+Integer sum = 0;
+for(Integer i=0; i<oddNumbers.size(); i+=2){
+    sum += oddNumbers[i];
+}
+System.debug('Sum of odd numbers at even positions: ' + sum);
